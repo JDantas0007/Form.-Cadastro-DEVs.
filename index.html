@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon/computador-portatil.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+       
+        <title>Formulário de Cadastro</title>
+    </head>
+    
+    <body>
+       <div class="container">
+        <div id="topo">
+            <h1>Cadastro DEVs.</h1>
+            <h4>Complete suas Infomações</h4>
+        </div>   
+        
+        <form>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="name"><strong>Name</strong></label>
+                    <input class="input-name" type="text" name="name" required>
+                </div>
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input class="input-name" type="text" name="sobrenome" required>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input class="input-email" type="email" name="email" required>
+            </div>
+            
+            <div class="campo">
+                <strong>De qual lado da aplicação você desenvolve ?</strong>
+                <label class="checked">
+                    <input class="input-check" type="radio" name="devweb" value="Front-end" checked>Front-end
+                </label>
+                <label class="checked">
+                    <input class="input-check" type="radio" name="devweb" value="Back-end">Back-end
+                </label>
+                <label class="checked">
+                      <input class="input-check" type="radio" name="devweb" value="Fullstack">Fullstack
+                </label> 
+            </div> 
+
+            <div class="campo">
+                <label for="senioridade"><strong>Senioridade</strong></label>
+                <select name="Senioridade" id="Senioridade">
+                    <option selected disabled value="" required>Selecione</option>
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Senior</option>
+                </select>
+            </div>  
+
+            <fieldset class="grupo">
+
+                <div id="check">
+                    <p>Selecione as tecnologias que você utiliza:</p>
+                    
+                    <div class="checked">
+                        <input class="input-check" type="checkbox" id="tecnologia1"  value="HTML">
+                        <Label  for="tecnologia1">HTML</Label>
+                    </div>
+                    <div class="checked">
+                        <input class="input-check" type="checkbox" id="tecnologia2"  value="CSS">
+                        <Label for="tecnologia2">CSS</Label>
+                    </div>
+                    <div class="checked">
+                        <input class="input-check" type="checkbox" id="tecnologia3"  value="Javascript">
+                        <Label for="tecnologia3">JavaScript</Label> 
+                    </div>
+                    <div class="checked">
+                        <input class="input-check" type="checkbox" id="tecnologia4"  value="PHP">
+                        <Label for="tecnologia4">PHP</Label>
+                    </div>
+                    <div class="checked">
+                        <input class="input-check" type="checkbox" id="tecnologia5"  value="Java">
+                        <Label for="tecnologia5">Java</Label>
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <div class="campo">
+                <strong>Conte um pouco mais da sua experiência:</strong>
+                <textarea ></textarea>
+            </div>
+
+            <div class="botao">
+                <button id="btn" type="submit">Concluido</button>
+            </div>
+           
+        </form> 
+     </div>
+        <script src="config.js"></script>   
+              
+    </body>
+</html>
